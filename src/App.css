@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: #ffffff;
+  color: #000000;
+  
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+a {
+  color: #000000;
+  text-decoration: none;
+};
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+p{
+  font-family: 'Century Gothic';
+  *display: block;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+hr {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}

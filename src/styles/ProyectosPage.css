@@ -1,0 +1,185 @@
+/*PROYECTOS*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    background: #ffffff;
+    color: #000000;
+    
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  a {
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+  p{
+    font-family: 'Century Gothic';
+    *display: block;
+    margin-top: 45px;
+    margin-bottom: 45px;
+  }
+  hr {
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+.cards-banner-three .content-2 {
+    font-family: 'Century Gothic Bold';
+    flex-direction: column;
+    text-align: center;  
+    font-size: 25px;
+    margin-bottom: 0;
+    color: #000000; 
+    padding-top: 50px;
+   position: relative;
+    
+}
+
+
+.cards-banner-three{
+    width: 100%;
+    height: 160px;
+    /*background: url(img/banner.png ) center center/cover;
+    background-color: rgba(0,0,0,.2);*/
+    margin-bottom: 40px;
+    
+    
+    
+}
+
+.cards-banner-three::before{
+   
+    content: '';
+    position: absolute;
+    top:auto;
+    width: 90%;
+    height: 160px;
+    background: url(../../public/img/banner33.jpg) no-repeat center center/cover;
+    opacity: 0.3;
+   
+   
+
+}
+.cards-banner-three h2{
+    
+    line-height: 1.2;
+    
+}
+
+
+
+.box-video{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 16px 0;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+}
+.box-video video {
+    display: flex;
+    width: 50%;
+    height: 400px;
+}
+
+/*.container-videos {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 16px 0;
+    display: block;
+    gap: 32px;
+    align-items: center;
+}*/
+.text-video {
+    text-align: center;
+    display: block;
+    width: 50%;
+    justify-content: center;
+   
+}
+
+
+
+
+
+
+
+.box-video:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+
+/*{
+    width: 100%;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: nowrap;
+justify-content: center ;
+align-items: center;*/
+
+
+.text-video  p {
+    color: #000000;
+    font-size: 18px;
+    color: rgb(120, 120, 120);
+    box-sizing: border-box;
+    font-family: 'Century Gothic';
+
+}
+
+
+
+.text-video h2{
+    color: #000000;
+    font-size: 24px;
+    
+    font-family: 'Century Gothic bold';
+}
+
+
+
+
+/*PROYECTOS FIN*/
+
+/*AJUSTE DE PANTALLA*/
+@media (max-width: 700px) {
+   
+
+        /*PROYECTO*/
+        .box-video{
+            display: block;
+        }
+
+    
+        .box-video video {
+            display:flex ;
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        .text-video {
+            flex-direction: column;
+            text-align: left;
+            display: flex;
+            width: 100%; 
+        }
+        
+        .text-video h2 {
+            text-align: center;
+        } }

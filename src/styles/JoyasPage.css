@@ -1,0 +1,261 @@
+/*JOYAS INICIO*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    background: #ffffff;
+    color: #000000;
+    
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  a {
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+  p{
+    font-family: 'Century Gothic';
+    *display: block;
+    margin-top: 45px;
+    margin-bottom: 45px;
+  }
+  hr {
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+.body-joyas { width: 100%;
+    display: flex;
+}
+.cards-banner-two .content-2 {
+    font-family: 'Century Gothic Bold';
+    flex-direction: column;
+    text-align: center;  
+    font-size: 25px;
+    margin-bottom: 0;
+    color: #000000; 
+    padding-top: 50px;
+   position: relative;
+    
+}
+
+
+.cards-banner-two{
+    width: 100%;
+    height: 160px;
+    /*background: url(img/banner.png ) center center/cover;
+    background-color: rgba(0,0,0,.2);*/
+    margin-bottom: 40px;
+    
+    
+    
+}
+ 
+
+.cards-banner-two::before{
+   
+    content: '';
+    position: absolute;
+    top:auto;
+    width: 90%;
+    height: 160px;
+    background: url(../../public/img/banner33.jpg) no-repeat center center/cover;
+    opacity: 0.4;
+   
+   
+
+}
+.cards-banner-two h2{
+    
+    line-height: 1.2;
+    
+}
+footer p {
+    color: #ccc;
+}
+footer{
+    background-color: #ccc; /*#cccccc*/
+    clear: both;
+    color: #333;
+    text-align: center;
+    padding: 5px 0; /*3rem 0*/
+    margin-top: 20px;
+    
+}
+footer{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items:center ;
+
+background-color: black;
+}
+.logo-footer{
+    margin-right: 50px;
+    margin-bottom: 50px;
+    width: 100px; 
+    margin-top: 30px;}
+
+
+ 
+  .box-joyas {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    border-radius: 10px;
+        margin: 10px;
+        /*border: yellow solid 1px;*/
+    
+        text-align: center ;
+        
+    
+  }
+  
+  .box-joyas p{
+        color: #000000;
+        margin-left: auto;
+        margin-right: auto;
+       
+  }
+  .box-joyas img {
+    width: 100%;
+    
+   justify-content: center;
+    margin-bottom: 20px;
+    
+    transition: all .5s;
+    overflow: hidden;
+  }
+  .box-joyas img:hover{
+    transform: scale(1.1);
+  }
+  .caja-img{
+    overflow: hidden;
+  }
+  .joyas-{
+   
+    border: 1px solid #ccc;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .joyas-:hover{
+    
+        transform: scale(1.1);
+  }
+  .item1 {
+    text-align: center;
+    font-family: 'Century Gothic';
+    font-size: 14px;
+  }
+ .text-description{
+    font-family: 'Century Gothic ';
+   
+ }
+ .text-precio{
+    text-align: center;
+    
+    margin: 20px;
+ }
+
+
+.box-categoria {
+    width: 20%;
+    display: block;
+
+}
+.box-categoria p{
+    color: #000000;
+    text-align: center;
+}
+.box-categoria h3{
+    color: #000000;
+    text-align: center;
+}
+
+
+/**/
+
+
+/*JOYAS FIN*/
+
+/*AJUSTE DE PANTALLA*/
+@media (max-width: 700px) {
+    .menu-btn {
+        display: block;
+    }
+    
+    .nav-main ul.nav-menu {
+        display: block;
+        position: absolute;
+        top: 0 ;
+        left: 0;
+        background: #ffffff;
+        height: 100%;
+        padding: 30px;
+        opacity: .9;
+        transform: translateX(-400px);
+        transition: transform .5s ease-in-out;
+        }
+        .nav-main ul.nav-menu.show {
+            transform: translateX(-20px);
+        }
+
+        .nav-main ul.nav-menu li {
+            padding: 20px;
+            font-size: 14px;
+        }
+        .nav-main ul.nav-lupa {
+            margin: 40px;
+        }
+        footer{
+            display: block;
+            text-align: center;
+        }
+        footer .logo-footer{
+        text-align: center;
+        margin-right: auto;
+        margin-top: 50px;
+        width: 150px;
+        } };
+
+            /*AJUSTE DE PANTALLA*/
+@media (max-width: 700px) {
+   
+    .box-categoria{
+        display: flex;
+        flex-direction:column-reverse;
+    }
+   .joyas-{
+    display: block;
+}}
+@media (max-width: 700px) {
+    .box-joyas {
+        grid-template-columns: 1fr;
+    }
+    .box-joyas img{
+        height: 250px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .box-joyas {
+        grid-template-columns: 1fr;
+    }
+    .box-joyas img{
+        height: 250px;
+    }
+}
